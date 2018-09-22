@@ -46,8 +46,6 @@ export default class Ruler extends React.Component {
     })
   }
   render () {
-    console.log(this.props)
-
     return (
       <div className='zap__kit-ruler-container'>
         <HorizontalRuler width={this.state.width} mouse={this.state._mPos} />

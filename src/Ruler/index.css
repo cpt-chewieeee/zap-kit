@@ -1,0 +1,85 @@
+.zap__kit-ruler-container {
+  position: relative;
+  line-height: 1.15;
+  height: 100%;
+}
+
+.zap__kit-ruler-container ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  color: #fff;
+  font-size: 62.5%;
+}
+
+.ruler li { position: absolute; }
+
+.horizontal-ruler li { top: -1px; }
+.horizontal-ruler li:first-child { display:none; }
+
+.vertical-ruler li { right: 0; margin-top: -12px; }
+
+.ruler {
+	position: absolute;
+	background: #2b7dce;
+	background-size: 100px 100px;
+	background-position: -1px -1px;
+}
+.ruler:after {
+	content: '';
+	display: block;
+	position: absolute;
+	background-size: 10px 10px;
+	background-position: -1px -1px;
+}
+
+#horizontal-ruler {
+  height:20px;
+  width:300px;
+  top:0; 
+  left:21px;
+	background-image:linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px);
+}
+
+#horizontal-ruler:after {
+  top:50%; 
+  left:0;
+  width:100%; 
+  height:50%;
+  background: repeating-linear-gradient(90deg, #ffffff, #ffffff .8px, transparent 0, transparent 10.00px);
+}
+
+#vertical-ruler {
+  height:200px; 
+  width:20px;
+  top:21px; 
+  left:0;
+	background-image:linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px);
+}
+
+#vertical-ruler:after {
+  top:0; 
+  left:50%;
+  width:50%; 
+  height:100%;
+  background: repeating-linear-gradient(180deg, #ffffff, #ffffff .8px, transparent 0, transparent 10.00px);
+}
+.marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: rgba(10, 34, 255, 0.8);
+}
+.marker.h-marker {
+  width: 1px;
+  /* height: 100%; */
+}
+.marker.v-marker {
+  height: 1px;
+  text-align: right;
+  font-size: 70%;
+}
+.zap__kit-content {
+  padding: 20px 0 0 20px;
+}

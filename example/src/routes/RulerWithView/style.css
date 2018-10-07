@@ -1,0 +1,6 @@
+body {
+  overflow: hidden;
+}
+#root {
+  overflow: auto;
+}

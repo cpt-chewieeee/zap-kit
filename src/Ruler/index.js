@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import HorizontalRuler from './HorizontalRuler'
 import VerticalRuler from './VerticalRuler'
+import Tools from './tools'
 import './index.css'
 
 export default class Ruler extends React.Component {
@@ -48,6 +49,7 @@ export default class Ruler extends React.Component {
   render () {
     return (
       <div className='zap__kit-ruler-container'>
+        <Tools />
         <HorizontalRuler width={this.state.width} mouse={this.state._mPos} />
         <VerticalRuler height={this.state.height} mouse={this.state._mPos} />
         <div ref={ref => this.contentRef = ref} className='zap__kit-content' style={{ height: this.state.height - 20, width: this.state.width - 20 }} onMouseMove={this.handleMoving}>{this.props.children}</div>

@@ -83,3 +83,7 @@
 .zap__kit-content {
   padding: 20px 0 0 20px;
 }
+
+.hidden {
+  display: none;
+}

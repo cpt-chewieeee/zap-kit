@@ -1,5 +1,6 @@
 import React from 'react'
 import { Ruler } from 'zap-kit'
+import CogIcon from '../../assets/cog.png'
 import './style.css'
 export default class RulerWithView extends React.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ export default class RulerWithView extends React.Component {
         ref={ref => this.refContainer = ref}
       >
         <Ruler
+          toolAsset={CogIcon}
           refContainer={this.state.container}>
 
           <div className='display-panel' style={{ backgroundColor: 'red', height: '100%' }}>

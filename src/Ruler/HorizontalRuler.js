@@ -21,7 +21,7 @@ export default class HorizontalRuler extends React.Component {
 
     return (
       <div id='horizontal-ruler' className='ruler' style={{ width: this.props.width - 20 }}>
-        <b className='marker h-marker' style={{ left: this.props.mouse.x - 20, height: this.props.mouse.y }} />
+        <b className={`marker h-marker ${this.props.mouse.x - 20 < 0 ? 'hidden' : ''}`} style={{ left: this.props.mouse.x - 20, height: this.props.mouse.y }} />
         <ul>
           {this.genHorizontalBars()}
         </ul>

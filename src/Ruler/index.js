@@ -78,10 +78,10 @@ export default class Ruler extends React.Component {
             height={this.state.height}
             childrenRef={this.state.childrenRef}
           />
-          }
+        }
         <HorizontalRuler width={this.state.width} mouse={this.state._mPos} />
         <VerticalRuler height={this.state.height} mouse={this.state._mPos} />
-        <div ref={ref => this.contentRef = ref} className='zap__kit-content' style={{ height: this.state.height - 20, width: this.state.width - 20 }} onMouseMove={this.handleMoving}>{this.props.children}</div>
+        <div ref={ref => this.contentRef = ref} className='zap__kit-content' style={{ height: this.state.height, width: this.state.width }} onMouseMove={this.handleMoving}>{this.props.children}</div>
       </div>
     )
   }

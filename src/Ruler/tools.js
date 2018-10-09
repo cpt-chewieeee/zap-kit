@@ -18,7 +18,7 @@ export default class Tools extends React.PureComponent {
   handleToolsClick = (e) => {
     this.setState({ displayMenu : !this.state.displayMenu })
   }
-  render () {
+  render () {    
     return (
       <div className='tool-controller'>
         <div className='square' onClick={this.handleToolsClick}>
@@ -30,10 +30,11 @@ export default class Tools extends React.PureComponent {
             height: this.props.height * 0.2
           }}>
             <div className='inner-view' style={{
-              top: this.props.offsetTop * 0.2 * -1,
+              // top: (this.props.offsetTop * 0.2 * -1),
+              top: 0,
               left: this.props.offsetLeft * 0.2 * -1,
               width: window.innerWidth * 0.2,
-              height: window.innerHeight * 0.2
+              height: this.props.height * 0.2
             }}></div>
           </div>
         </div>

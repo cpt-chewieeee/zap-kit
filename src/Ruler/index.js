@@ -23,7 +23,7 @@ export default class Ruler extends React.Component {
       height: 0,
       width: 0,
       childrenRef: null,
-      offsetTop: 0,
+      offsetTop: 20,
       offsetLeft: 0
     }
   }
@@ -44,7 +44,6 @@ export default class Ruler extends React.Component {
       if(width !== this.state.width || height !== this.state.height) {
         this.updateDimension(width, height)
       }
-      
     } 
   }
   updateDimension (width, height) {
@@ -77,6 +76,7 @@ export default class Ruler extends React.Component {
             width={this.state.width}
             height={this.state.height}
             childrenRef={this.state.childrenRef}
+            parentRef={this.props.refContainer}
           />
         }
         <HorizontalRuler width={this.state.width} mouse={this.state._mPos} />

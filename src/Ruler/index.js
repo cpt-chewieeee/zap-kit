@@ -21,8 +21,8 @@ export default class Ruler extends React.Component {
     this.contentRef = null
     this.state = {
       _mPos: { x: 0, y: 0 }, /* x: top, y: vertical */
-      height: 0,
-      width: 0,
+      height: 0, // used for vertical ruler
+      width: 0, // used for horizontal ruler
       childrenRef: null,
       offsetTop: 20,
       offsetLeft: 0,

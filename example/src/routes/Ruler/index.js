@@ -22,7 +22,6 @@ export default class RulerContainer extends React.Component {
         ref={ref => this.refContainer = ref}
       >
         <Ruler refContainer={this.state.container}>
-
           <div className='display-panel' style={{ backgroundColor: 'red', height: '100%' }}>
             Display Content
           </div>

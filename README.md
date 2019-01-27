@@ -2,6 +2,10 @@
 
 > react component library
 
+> Zap-kit is a collection of widgets for the html canvas. 
+>  * Components
+>     * [Ruler](#ruler-component)
+
 [![NPM](https://img.shields.io/npm/v/zap-kit.svg)](https://www.npmjs.com/package/zap-kit) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
@@ -10,8 +14,12 @@
 npm install --save zap-kit
 ```
 
+
+
 ## Usage
 
+### Ruler Component
+![Ruler component](./docs/ruler-component-example1.png)
 ```jsx
 import { Ruler } from 'zap-kit'
 export default class RulerContainer extends Component {

@@ -68,6 +68,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 200;
   display: block;
   background: rgba(10, 34, 255, 0.8);
 }
@@ -77,6 +78,7 @@
 }
 .marker.v-marker {
   height: 1px;
+  padding-right: 12px;
   text-align: right;
   font-size: 70%;
 }

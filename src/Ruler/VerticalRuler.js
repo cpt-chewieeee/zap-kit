@@ -18,10 +18,9 @@ export default class VerticalRuler extends React.Component {
   render() {
     return (
       <div id='vertical-ruler' className='ruler' style={{ height: this.props.height - 20 }}>
-        <b className={`marker v-marker ${this.props.mouse.y - 20 < 0 ? 'hidden' : ''}`} style={{ top: this.props.mouse.y - 20, width: this.props.mouse.x }}>{`x:${this.props.mouse.x - 20} y:${this.props.mouse.y - 20}`}</b>
+        <b className={`marker v-marker ${this.props.mouse.y - 30 < 0 ? 'hidden' : ''}`} style={{ top: this.props.mouse.y - 20, width: this.props.mouse.x }}>{`x:${this.props.mouse.x - 20} y:${this.props.mouse.y - 20}`}</b>
         <ul>
           {this.genVerticalBars()}
-
         </ul>
       </div>
     )

@@ -1,3 +1,1 @@
-
-
 export Ruler from './Ruler'

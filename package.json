@@ -5,6 +5,18 @@
   "author": "cpt-chewieeee",
   "license": "MIT",
   "repository": "cpt-chewieeee/zap-kit",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier && cd ../kindred-cards && npm run test -- --coverage",
+      "pre-push": "git add"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write 'src/**/*.js'",
+      "git add"
+    ]
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -43,6 +55,9 @@
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^1.2.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.16.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "^2.1.3",

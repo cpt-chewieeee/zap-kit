@@ -7,7 +7,7 @@
   "repository": "cpt-chewieeee/zap-kit",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier && cd ../kindred-cards && npm run test -- --coverage",
+      "pre-commit": "lint-staged",
       "pre-push": "git add"
     }
   },
